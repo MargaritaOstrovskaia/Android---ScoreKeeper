@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Score Keeper</string>
+    <string name="darts_image">darts_image</string>
+    <string name="rb_301">301</string>
+    <string name="player_a"><u>Player A</u></string>
+    <string name="player_b"><u>Player B</u></string>
+    <string name="x1">*1</string>
+    <string name="x2">*2</string>
+    <string name="x3">*3</string>
+    <string name="add_points">add points</string>
+    <string name="zero">0</string>
+    <string name="skip_round">The last dart thrown must land in a double or the bullseye.</string>
+    <string name="bust_score">Score is bust.</string>
+    <string name="win">WIN!</string>
+    <string name="add_dart">add dart</string>
+    <string name="choose_points">Choose points: </string>
+    <string name="choose_multiplier">Choose multiplier: </string>
+    <string name="result">Result:</string>
+    <string name="choose_points_1">1 dart points:</string>
+    <string name="choose_points_2">2 dart points:</string>
+    <string name="choose_points_3">3 dart points:</string>
+    <string name="reset">reset</string>
+    <string name="info">Who win?</string>
+    <string name="summary">Summary points:</string>
+    <string name="ok">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="sure">Are you sure?</string>
+</resources>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_main" >
+    <LinearLayout
+        android:id="@+id/layout_main_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/dp_round"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <TextView
+                style="@style/TextPlayer"
+                android:text="@string/player_a" />
+            <TextView
+                android:id="@+id/total_score_a"
+                style="@style/TotalScore"
+                android:gravity="start"
+                android:text="@string/rb_301" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/columnThird" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_3"
+                    android:text="@string/choose_points_1"
+                    android:textSize="@dimen/round_text"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/button_a_1"
+                    android:layout_width="@dimen/dart_button"
+                    android:layout_height="@dimen/dart_button"
+                    android:layout_gravity="center"
+                    android:text="@string/zero"
+                    android:onClick="setPlayerAPoint1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_3"
+                    android:text="@string/choose_points_2"
+                    android:textSize="@dimen/round_text"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/button_a_2"
+                    android:layout_width="@dimen/dart_button"
+                    android:layout_height="@dimen/dart_button"
+                    android:layout_gravity="center"
+                    android:text="@string/zero"
+                    android:onClick="setPlayerAPoint2" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_3"
+                    android:text="@string/choose_points_3"
+                    android:textSize="@dimen/round_text"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/button_a_3"
+                    android:layout_width="@dimen/dart_button"
+                    android:layout_height="@dimen/dart_button"
+                    android:layout_gravity="center"
+                    android:text="@string/zero"
+                    android:onClick="setPlayerAPoint3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@color/columnSecond" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_3"
+                    android:text="@string/summary"
+                    android:textSize="@dimen/round_text"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/button_a_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dart_button"
+                    android:gravity="center"
+                    android:text="@string/zero"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_add_points_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_points"
+                android:onClick="onClickAddPlayerAPoints"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/dp_round"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <TextView
+                style="@style/TextPlayer"
+                android:text="@string/player_b" />
+            <TextView
+                android:id="@+id/total_score_b"
+                style="@style/TotalScore"
+                android:gravity="start"
+                android:text="@string/rb_301" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/columnThird" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_3"
+                    android:text="@string/choose_points_1"
+                    android:textSize="@dimen/round_text"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/button_b_1"
+                    android:layout_width="@dimen/dart_button"
+                    android:layout_height="@dimen/dart_button"
+                    android:layout_gravity="center"
+                    android:text="@string/zero"
+                    android:onClick="setPlayerBPoint1"
+                    android:enabled="false"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_3"
+                    android:text="@string/choose_points_2"
+                    android:textSize="@dimen/round_text"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/button_b_2"
+                    android:layout_width="@dimen/dart_button"
+                    android:layout_height="@dimen/dart_button"
+                    android:layout_gravity="center"
+                    android:text="@string/zero"
+                    android:onClick="setPlayerBPoint2"
+                    android:enabled="false"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_3"
+                    android:text="@string/choose_points_3"
+                    android:textSize="@dimen/round_text"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/button_b_3"
+                    android:layout_width="@dimen/dart_button"
+                    android:layout_height="@dimen/dart_button"
+                    android:layout_gravity="center"
+                    android:text="@string/zero"
+                    android:onClick="setPlayerBPoint3"
+                    android:enabled="false"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@color/columnSecond" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_3"
+                    android:text="@string/summary"
+                    android:textSize="@dimen/round_text"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/button_b_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dart_button"
+                    android:gravity="center"
+                    android:text="@string/zero"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_add_points_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_points"
+                android:onClick="onClickAddPlayerBPoints"
+                android:enabled="false" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_main_top"
+        android:gravity="center"
+        android:padding="@dimen/dp_3"
+        android:text="@string/info"
+        android:textSize="@dimen/round_text"
+        android:textColor="@android:color/holo_red_light"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewInfo"
+        android:gravity="center"
+        android:padding="@dimen/dp_3"
+        android:text="@string/reset"
+        android:onClick="onClickResetAllData"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

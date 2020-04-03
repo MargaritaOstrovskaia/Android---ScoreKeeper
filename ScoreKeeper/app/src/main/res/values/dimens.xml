@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dp_3">3dp</dimen>
+    <dimen name="dp_round">5dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="player_text">26sp</dimen>
+    <dimen name="score_text">46sp</dimen>
+    <dimen name="round_text">14sp</dimen>
+    <dimen name="dart_button">48dp</dimen>
+    <dimen name="dart_text">20sp</dimen>
+    <dimen name="dart_padding">10dp</dimen>
+</resources>
