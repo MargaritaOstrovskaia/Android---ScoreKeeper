@@ -50,8 +50,10 @@
         protected void onActivityResult(int requestCode, int resultCode, Intent data) {
             super.onActivityResult(requestCode, resultCode, data);
 
+            // check which activity returned the result
             if (requestCode == POINTS)
                 if (resultCode == RESULT_OK) {
+                    // get data from AddDartActivity (key, default result)
                     int score = data.getIntExtra("POINTS", 0);
                     isFinish = data.getBooleanExtra("FINISH", false);
 
@@ -116,6 +118,8 @@
 
         private void setPoints(int dart) {
             currDart = dart;
+
+            // start new AddDartActivity for result
             Intent intent = new Intent(MainActivity.this, AddDartActivity.class);
             startActivityForResult(intent, POINTS);
         }

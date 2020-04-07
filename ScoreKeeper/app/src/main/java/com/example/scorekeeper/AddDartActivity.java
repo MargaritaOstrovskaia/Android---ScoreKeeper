@@ -84,11 +84,14 @@ public class AddDartActivity extends AppCompatActivity {
 
     public void addDartPoints(View view) {
         Intent answerIntent = new Intent();
+
+        // put data for MainActivity (key, result)
         if (currScore == 50 || currMultiplier == 2)
             answerIntent.putExtra("FINISH", true);
         else
             answerIntent.putExtra("FINISH", false);
         answerIntent.putExtra("POINTS", resultScore);
+        
         setResult(RESULT_OK, answerIntent);
         finish();
     }
