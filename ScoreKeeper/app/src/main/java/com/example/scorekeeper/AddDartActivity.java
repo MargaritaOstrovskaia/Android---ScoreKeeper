@@ -91,7 +91,7 @@ public class AddDartActivity extends AppCompatActivity {
         else
             answerIntent.putExtra("FINISH", false);
         answerIntent.putExtra("POINTS", resultScore);
-        
+
         setResult(RESULT_OK, answerIntent);
         finish();
     }
